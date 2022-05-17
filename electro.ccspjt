@@ -32,18 +32,31 @@ D1_L12=[79662]Stopped Editing.
 D1_L13=[79892]Started Editing.
 D1_L14=[80192]Stopped Editing.
 D2=17-05-2022
-D2_L=6
+D2_L=18
 D2_L1=[29317]Started Editing.
 D2_L2=[29715]Stopped Editing.
 D2_L3=[29824]Started Editing.
 D2_L4=[30378]Stopped Editing.
 D2_L5=[31013]Started Editing.
 D2_L6=[32329]Stopped Editing.
+D2_L7=[34597]Started Editing.
+D2_L8=[34908]Stopped Editing.
+D2_L9=[35734]Started Editing.
+D2_L10=[36034]Stopped Editing.
+D2_L11=[36862]Started Editing.
+D2_L12=[39395]Stopped Editing.
+D2_L13=[39454]Started Editing.
+D2_L14=[39754]Stopped Editing.
+D2_L15=[39772]Started Editing.
+D2_L16=[40088]Stopped Editing.
+D2_L17=[46289]Project Opened.
+D2_L18=[46479]Started Editing.
 
 [Opened Files]
 1=electro.c
-2=
-3=
+2=electro.h
+3=..\..\..\..\..\..\..\Downloads\projetElecCodeC\projetElecCodeC\codeProjetElec.c
+4=
 [electro.c]
 Type=4
 [Units]

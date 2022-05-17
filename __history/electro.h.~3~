@@ -20,6 +20,7 @@
 #FUSES NOEBTR                   //Memory not protected from table reads
 #FUSES NOEBTRB                  //Boot block not protected from table reads
 
-#use delay(clock=20000000)
+//#use delay(clock=20000000)
+#use delay(clock=20)
 #use rs232(baud=9600,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8)
 

@@ -1,5 +1,5 @@
 ÀÄelectro
-   ÃÄMAIN  0/660  Ram=2
+   ÃÄMAIN  0/632  Ram=2
    ³  ÃÄ@cinit1  (Inline)  Ram=0
    ³  ÃÄ@ITOF  0/56  Ram=2
    ³  ÃÄ@MULFF  0/244  Ram=11
@@ -10,10 +10,9 @@
    ³  ÃÄ@DIV1616  0/66  Ram=5
    ³  ÃÄ@MUL1616  0/30  Ram=5
    ³  ÃÄ@DIV1616  0/66  Ram=5
+   ³  ÃÄ@DIV1616  0/66  Ram=5
    ³  ÃÄ@MUL1616  0/30  Ram=5
    ³  ÃÄ@DIV1616  0/66  Ram=5
-   ³  ÃÄ@DIV1616  0/66  Ram=5
-   ³  ÃÄ@DIV1616  0/66  Ram=5
    ³  ÀÄ@delay_ms1  0/38  Ram=1
-   ÀÄRDA_isr  0/64  Ram=4
-      ÀÄ@GETCH_BIU_1  0/24  Ram=0
+   ÃÄTIMER1_isr  0/10  Ram=0
+   ÀÄRDA_isr  0/50  Ram=2

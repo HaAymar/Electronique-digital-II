@@ -6,8 +6,7 @@ int i = 0;
 int16 diz, unit;
 boolean flag = 0;
 int16 maxDist = 100;
-int16 dist = 0; 
-int16 time;
+int16 dist, time  ;
 int d, c,u;
 
 #INT_TIMER1
@@ -15,13 +14,13 @@ void  TIMER1_isr(void)
 {
    set_timer1(0);
 
-}
 
-#INT_RDA
+}
+#int_RDA
 void RDA_isr(void) 
 {
-   buffer[i] = getc(0);
-    if(buffer[0] == ':' && flag == 0){
+   buffer[i] = getc();
+    if(buffer[0] == ':' && flag == 0 ){
         i++;
         if(i>4){
             i = 0;
@@ -30,13 +29,8 @@ void RDA_isr(void)
     }
  
 }
-#define LCD_ENABLE_PIN PIN_D7
-#define LCD_RS_PIN PIN_D5
-#define LCD_RW_PIN PIN_D6
-#define LCD_DATA_PORT PORTB
-#define LCD_TYPE 2
-#define LCD_TRIS_LOCATION TRISB
-#use rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7, ERRORS)
+
+
 void main()
 {
 
@@ -53,14 +47,13 @@ void main()
    enable_interrupts(INT_RDA);
    enable_interrupts(GLOBAL);
    setup_oscillator(False);
-   
-  
+} 
      // TODO: USER CODE!!
      while(true){
       
       //read value of sensor
       output_high(pin_c1);
-      delay_us(20);
+      delay_us(10);
       output_low(pin_c1);
       
       while(!input(pin_c0)){} //attendre l'etat haut de la pin echo
@@ -71,7 +64,7 @@ void main()
       time = get_timer1();               
       dist = time*0.028;  
       printf("distance : %ld \n" , dist);
-      //printf("\n");
+      printf("\n");
       delay_ms(100);
     
       if(dist<maxDist){
@@ -98,13 +91,14 @@ void main()
       
       if(flag == 1){
          flag =0;
-         c = buffer[1]-48;
-         d = buffer[2]-48;
-         u = buffer[3]-48;
+         c = buffer[1]-10;
+         d = buffer[2]-10;
+         u = buffer[3]-10;
          maxDist = (int16)(c*100+d*10+u);
          
       }
       delay_ms(300);
      }
 
-}
+
+

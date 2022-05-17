@@ -1,3 +1,1 @@
-      Memory usage:   ROM=5%      RAM=3% - 4%
-      0 Errors,  0 Warnings.
-Build Successful.
+*** Error 24 "C:\Program Files (x86)\PICC\Devices\18F458.h" Line 11(9,18): Unknown device type    -- Try PCH

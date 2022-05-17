@@ -1,8 +1,7 @@
 #include <electro.h>
 #include <stdio.h>
  
-#use rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7, ERRORS)
-char buffer[4];
+char buffer[3];
 int i = 0;
 int16 diz, unit;
 boolean flag = 0;
@@ -10,13 +9,20 @@ int16 lDist = 100;
 int16 distance, time  ;
 int d, c,u;
 
+#INT_TIMER1
+void  TIMER1_isr(void) 
+{
+   set_timer1(0);
+
+
+}
 #int_RDA
 void RDA_isr(void) 
 {
    buffer[i] = getc();
     if(buffer[0] == ':' && flag == 0 ){
         i++;
-        if(i>=4){
+        if(i>4){
             i = 0;
             flag = 1;
         }
@@ -46,19 +52,18 @@ void main()
      // TODO: USER CODE!!
      while(true){
       
-      //read value of sensor
-      output_high(pin_b1);
-      delay_us(10);
+      output_high(pin_c1);
+      delay_us(100);
       output_low(pin_c1);
       
-      while(!input(pin_c0)){} //attendre l'etat haut de la pin echo
+      while(!input(pin_c0)){}  
       
       set_timer1(0);
       
-      while(input(pin_c0)){} //attendre l'etat haut de la pin echo
+      while(input(pin_c0)){} / 
       time = get_timer1();               
-      distance = time*0.028;  
-      printf("distance : %ld \n" , distance);
+      distance = time*0.028; 
+      printf("distance est egale : %ld \n" , distance);
       printf("\n");
       delay_ms(100);
     
@@ -70,19 +75,19 @@ void main()
          output_toggle(PIN_E1);
       }
       
-      if(distance<100){
-         output_low(pin_e2);
-         unit = distance/10;
-         diz = distance - (unit*10);
-         output_b((diz<<4)+unit);
-      }else{
-         output_high(PIN_E2);
-         diz = distance/100;
-         unit = (distance - (diz*100))/10;
-         output_b((diz<<0)+unit);
-         
-        
-      }
+      if(distance < 100){
+        output_low(PIN_E2);
+        diz = distance/10;
+        unit = distance - (diz*10);
+        output_b((diz<<4)+unit);
+    }else{
+        output_high(PIN_E2);
+        diz = distance/100;
+        output_high(PIN_E2);
+        diz = distance/100;
+        unit = (distance - (diz*100))/10;
+        output_b((diz<<4)+unit);
+    }
       
       if(flag == 1){
          flag =0;
@@ -92,10 +97,7 @@ void main()
          lDist = (int16)(c*100+d*10+u);
          
       }
-      c = lDist/100;
-      d = (lDist-(c*100))/10;
-      u = (lDist-(c*100))-(d*10);
-      delay_ms(30);
+      delay_ms(300);
      }
 
 }
