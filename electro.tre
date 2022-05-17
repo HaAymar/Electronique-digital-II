@@ -1,0 +1,19 @@
+ÀÄelectro
+   ÃÄMAIN  0/660  Ram=2
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@ITOF  0/56  Ram=2
+   ³  ÃÄ@MULFF  0/244  Ram=11
+   ³  ÃÄ@SFTOI  0/58  Ram=4
+   ³  ÃÄ@PSTRINGCN_9600_31766_31767  0/34  Ram=3
+   ³  ÃÄ@PRINTF_LD_9600_31766_31767  0/230  Ram=9
+   ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ÃÄ@DIV1616  0/66  Ram=5
+   ³  ÃÄ@MUL1616  0/30  Ram=5
+   ³  ÃÄ@DIV1616  0/66  Ram=5
+   ³  ÃÄ@MUL1616  0/30  Ram=5
+   ³  ÃÄ@DIV1616  0/66  Ram=5
+   ³  ÃÄ@DIV1616  0/66  Ram=5
+   ³  ÃÄ@DIV1616  0/66  Ram=5
+   ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ÀÄRDA_isr  0/64  Ram=4
+      ÀÄ@GETCH_BIU_1  0/24  Ram=0

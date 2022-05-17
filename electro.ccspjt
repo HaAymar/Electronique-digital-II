@@ -1,0 +1,51 @@
+[PROJECT]
+Target=electro.hex
+Processor_Text=PIC18F458
+CCSVerions=5.025
+Compiler=PCH
+CCSVersion=5.025
+[Target Data]
+FileList=electro.c
+[Directories]
+Include=
+[C:\Users\hakiz\OneDrive\Bureau\Haute Ecole Ephec\Bloc 2\Electronique Analogique\ProjetElectro\Electronique-digital-II\electro]
+Type=4
+[mru-list]
+1=electro.c
+
+[ProjectLog]
+Days=2
+D1=16-05-2022
+D1_L=14
+D1_L1=[72892]Project Opened.
+D1_L2=[72912]Started Editing.
+D1_L3=[74044]Stopped Editing.
+D1_L4=[74157]Started Editing.
+D1_L5=[75485]Stopped Editing.
+D1_L6=[75494]Started Editing.
+D1_L7=[75794]Stopped Editing.
+D1_L8=[76620]Started Editing.
+D1_L9=[77017]Stopped Editing.
+D1_L10=[78848]Project Opened.
+D1_L11=[79351]Started Editing.
+D1_L12=[79662]Stopped Editing.
+D1_L13=[79892]Started Editing.
+D1_L14=[80192]Stopped Editing.
+D2=17-05-2022
+D2_L=6
+D2_L1=[29317]Started Editing.
+D2_L2=[29715]Stopped Editing.
+D2_L3=[29824]Started Editing.
+D2_L4=[30378]Stopped Editing.
+D2_L5=[31013]Started Editing.
+D2_L6=[32329]Stopped Editing.
+
+[Opened Files]
+1=electro.c
+2=
+3=
+[electro.c]
+Type=4
+[Units]
+Count=1
+1=electro (main)

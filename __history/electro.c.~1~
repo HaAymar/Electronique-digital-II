@@ -1,0 +1,12 @@
+#include <electro.h>
+
+void main()
+{
+   setup_low_volt_detect(FALSE);
+
+	while(TRUE)
+	{
+		//TODO: User Code
+	}
+
+}

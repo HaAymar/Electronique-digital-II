@@ -1,0 +1,141 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01A strtok.save
+01B     rs232_errors
+01C-01F buffer
+020     i
+021-022 diz
+023-024 unit
+025.0   flag
+026-027 lDist
+028-029 distance
+02A-02B time
+02C     d
+02D     c
+02E     u
+02F     @delay_ms1.P1
+02F-032 @SFTOI.P2
+02F-032 @MULFF.P3
+02F-030 @ITOF.P4
+02F-030 @MUL1616.P5
+02F-030 @PRINTF_LD_9600_31766_31767.P6
+02F     @PSTRINGCN_9600_31766_31767.P7
+02F     MAIN.@SCRATCH1
+030     MAIN.@SCRATCH2
+030     @PSTRINGCN_9600_31766_31767.@SCRATCH1
+031-032 @MUL1616.P1
+031-032 @DIV1616.P2
+031     @PSTRINGCN_9600_31766_31767.@SCRATCH2
+031     @PRINTF_LD_9600_31766_31767.@SCRATCH1
+032     @PRINTF_LD_9600_31766_31767.@SCRATCH2
+033-034 @DIV1616.P1
+033-036 @MULFF.P2
+033     @PRINTF_LD_9600_31766_31767.@SCRATCH3
+033     @MUL1616.@SCRATCH1
+034     @PRINTF_LD_9600_31766_31767.@SCRATCH4
+035     @PRINTF_LD_9600_31766_31767.@SCRATCH5
+035     @DIV1616.@SCRATCH1
+036     @PRINTF_LD_9600_31766_31767.@SCRATCH6
+037     @MULFF.@SCRATCH1
+037     @PRINTF_LD_9600_31766_31767.@SCRATCH7
+038     @MULFF.@SCRATCH2
+039     @MULFF.@SCRATCH3
+03A     RDA_isr.@SCRATCH1
+03B     RDA_isr.@SCRATCH2
+03C     RDA_isr.@SCRATCH3
+03D     RDA_isr.@SCRATCH4
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000AE  @GETCH_BIU_1
+0000C6  RDA_isr
+000106  @const761.call
+000118  @ITOF
+000150  @MULFF
+000244  @SFTOI
+00027E  @PSTRINGCN_9600_31766_31767
+0002A0  @PRINTF_LD_9600_31766_31767
+000386  @delay_ms1
+0003AC  @DIV1616
+0003EE  @MUL1616
+00040C  MAIN
+00040C  @cinit1
+000436  @cinit2
+
+Project Directory:
+    C:\Users\hakiz\OneDrive\Bureau\Haute Ecole Ephec\Bloc 2\Electronique Analogique\ProjetElectro\Electronique-digital-II\
+
+Project Files:
+    electro.c                                               [17-mai-22 08:53  CRC=CB6E3156]
+    electro.h                                               [16-mai-22 20:14  CRC=D8102B21]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F458.h [18-avr.-14 16:56  CRC=1426A009]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h [31-juil.-07 13:24  CRC=4E4534F4]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [10-avr.-14 09:04  CRC=662B2714]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-juil.-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-janv.-08 13:55  CRC=2D1F019F]
+
+Source signature=4FD04832
+
+Units:
+    electro (main)
+
+Compiler Settings:
+    Processor:      PIC18F458
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   electro.xsym
+    Errors:      electro.err
+    Ext Symbols: electro.esym
+    INHX32:      electro.hex
+    Symbols:     electro.sym
+    List:        electro.lst
+    Debug/COFF:  electro.cof
+    Project:     electro.ccspjt
+    Call Tree:   electro.tre
+    Statistics:  electro.STA
